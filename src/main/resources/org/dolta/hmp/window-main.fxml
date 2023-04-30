@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="400" maxWidth="600" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E3348;"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.dolta.hmp.MainController">
+    <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #FAFAFA;">
+        <Label layoutX="229.0" layoutY="4.0" prefHeight="33.0" prefWidth="143.0" text="HoldMyPass!" textFill="#2f344a">
+            <font>
+                <Font name="Comic Sans MS Italic" size="23.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane layoutY="40.0" prefHeight="364.0" prefWidth="187.0" style="-fx-background-color: #778899;">
+        <Label layoutX="2.0" layoutY="-1.0" prefHeight="33.0" prefWidth="81.0" text="Application" textFill="#2f344a">
+            <font>
+                <Font name="Comic Sans MS Italic" size="13.0"/>
+            </font>
+        </Label>
+        <Button fx:id="addAppButton" contentDisplay="CENTER" layoutX="7.0" layoutY="307.0" mnemonicParsing="false"
+                text="Add Application" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+            <font>
+                <Font name="Comic Sans MS Italic" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="addAccountButton" layoutX="5.0" layoutY="148.0" mnemonicParsing="false" text="Add Account"
+                textOverrun="CENTER_WORD_ELLIPSIS"/>
+        <Button fx:id="showMeButton" layoutX="5.0" layoutY="188.0" mnemonicParsing="false" text="Show me!"/>
+        <ChoiceBox fx:id="accountSelector" layoutY="28.0" prefHeight="27.0" prefWidth="187.0"/>
+        <TextField fx:id="loginTextField" layoutX="4.0" layoutY="64.0" promptText="login">
+            <font>
+                <Font name="Comic Sans MS" size="12.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="passTextField" layoutX="4.0" layoutY="102.0" promptText="password">
+            <font>
+                <Font name="Comic Sans MS" size="12.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="appNameTextField" layoutY="248.0" promptText="Application">
+            <font>
+                <Font name="Comic Sans MS" size="12.0"/>
+            </font>
+        </TextField>
+    </AnchorPane>
+    <TableView fx:id="logTable" layoutX="186.0" layoutY="39.0" prefHeight="369.0" prefWidth="414.0"
+               style="-fx-background-color: #2E3348;">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Login"/>
+            <TableColumn prefWidth="75.0" text="Password"/>
+        </columns>
+    </TableView>
+</AnchorPane>
