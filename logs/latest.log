@@ -1,0 +1,46 @@
+[BAD] 2023-04-30 22:13:22 [JavaFX Application Thread]  - User with HWID: * entered existing mail or login.
+[BAD] 2023-04-30 22:16:42 [JavaFX Application Thread]  - User with HWID:basta ADMINONVACATION Windows_NT Windows 11 Intel64 Family 6 Model 154 Stepping 3, GenuineIntel amd64 10.0 en C:\Windows C: 6 9a03 Intel64 Family 6 Model 154 Stepping 3, GenuineIntel AMD64 null 16 entered existing mail or login.
+[BAD] 2023-04-30 22:22:02 [JavaFX Application Thread]  - User with HWID: entered existing mail or login.
+[DIAG] 2023-04-30 22:22:02 [JavaFX Application Thread]  - Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+[DIAG] 2023-04-30 22:22:02 [JavaFX Application Thread]  - 9a03
+[DIAG] 2023-04-30 22:22:02 [JavaFX Application Thread]  - Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+[DIAG] 2023-04-30 22:22:02 [JavaFX Application Thread]  - C:
+[BAD] 2023-05-02 12:23:52 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 10:59:30 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 11:00:59 [JavaFX Application Thread]  - User entered existing mail or login.
+[WARN] 2023-05-03 11:01:37 [JavaFX Application Thread]  - User provided wrong mail
+[WARN] 2023-05-03 11:01:37 [JavaFX Application Thread]  - null
+[WARN] 2023-05-03 11:01:45 [JavaFX Application Thread]  - User provided wrong mail
+[WARN] 2023-05-03 11:01:45 [JavaFX Application Thread]  - .bastardcom1@gmail.com
+[DIAG] 2023-05-03 11:01:52 [JavaFX Application Thread]  - M0RAVQKNW0V2GJ5I
+[FINE] 2023-05-03 11:01:52 [JavaFX Application Thread]  - Successfully added new account to database
+[FINE] 2023-05-03 11:01:52 [JavaFX Application Thread]  - Login:Admin EMail:*bastardcom1@gmail.com Wed May 03 11:01:52 MSK 2023
+[BAD] 2023-05-03 11:02:22 [JavaFX Application Thread]  - User entered existing mail or login.
+[DIAG] 2023-05-03 11:02:27 [JavaFX Application Thread]  - K2VOXCSR08X3BDW3
+[FINE] 2023-05-03 11:02:27 [JavaFX Application Thread]  - Successfully added new account to database
+[FINE] 2023-05-03 11:02:27 [JavaFX Application Thread]  - Login:Adm EMail:*stardcom1@gmail.com Wed May 03 11:02:27 MSK 2023
+[BAD] 2023-05-03 13:51:19 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:19 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:20 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:22 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:23 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:24 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:25 [JavaFX Application Thread]  - User entered existing mail or login.
+[DIAG] 2023-05-03 13:51:47 [JavaFX Application Thread]  - MKCQBTEPZZ0FBXOW
+[FINE] 2023-05-03 13:51:47 [JavaFX Application Thread]  - Successfully added new account to database
+[FINE] 2023-05-03 13:51:47 [JavaFX Application Thread]  - Login:Amen13 EMail:bastardqm1@gmail.com Wed May 03 13:51:47 MSK 2023
+[BAD] 2023-05-03 13:51:47 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:48 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:48 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:49 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:49 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:50 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:50 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:52 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:52 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:52 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:53 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:53 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:53 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:54 [JavaFX Application Thread]  - User entered existing mail or login.
+[BAD] 2023-05-03 13:51:54 [JavaFX Application Thread]  - User entered existing mail or login.

@@ -12,6 +12,7 @@ import java.util.concurrent.CompletableFuture;
 
 import javafx.scene.control.CheckBox;
 import org.dolta.hmp.utils.Log;
+import org.dolta.hmp.utils.RegLogValidator;
 
 public class LoginController {
 
@@ -51,7 +52,7 @@ public class LoginController {
         enterButton.setDisable(false);
     });
 
-    void logIn() throws SQLException, InterruptedException {
+    void logIn() throws SQLException {
         if (!(errorText.getText().equals(""))) {
             errorText.setText("Something went wrong! \nTry again later or contact DEV");
             Log.warn("Error occurred while trying to login!");
@@ -91,7 +92,7 @@ public class LoginController {
 
     @FXML
     void initialize() {
-        Log.info("App Initialized without errors");
+        Log.fine("App Initialized without errors");
         assert enterButton != null : "fx:id=\"enterButton\" was not injected: check your FXML file 'window-login.fxml'.";
         assert errorText != null : "fx:id=\"errorText\" was not injected: check your FXML file 'window-login.fxml'.";
         assert keepSessionCheck != null : "fx:id=\"keepSessionCheck\" was not injected: check your FXML file 'window-login.fxml'.";

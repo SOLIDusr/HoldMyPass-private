@@ -6,10 +6,8 @@ import org.apache.logging.log4j.Logger;
 
 public class Log {
 
+    public static final Logger logger = LogManager.getRootLogger();
 
-//    private static final Level DIAG = Level.forName("DIAG", 350);
-//    private static final Level FINE = Level.forName("FINE", 350);
-//    private static final Level BAD = Level.forName("BAD", 350);
 
     public static void debug(Object msg) {
         logger.debug(msg);
@@ -43,5 +41,4 @@ public class Log {
         logger.log(Level.forName("BAD", 100), msg);
     }
 
-    public static final Logger logger = LogManager.getRootLogger();
 }

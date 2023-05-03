@@ -5,11 +5,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import org.dolta.hmp.utils.Log;
+import org.dolta.hmp.utils.RegLogValidator;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.ResourceBundle;
-import java.util.concurrent.CompletableFuture;
 
 public class RegisterController {
 
@@ -37,26 +39,23 @@ public class RegisterController {
     @FXML
     private TextField passwordTextField;
 
-    Runnable runnable = (() -> {
-        enterButton.setDisable(true);
-        try {
-            Thread.sleep(600000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        enterButton.setDisable(false);
-    });
 
     void signIn() throws SQLException, InterruptedException {
         if (!(errorText.getText().equals(""))) {
             errorText.setText("Something went wrong! \nTry again later or contact DEV");
             return;
         }
-        boolean response = RegLogValidator.regProvider(loginTextField.getText(), passwordTextField.getText(), mailTextField.getText());
+        boolean response = RegLogValidator.regProvider(loginTextField.getText(), passwordTextField.getText(), mailTextField.getText().toLowerCase());
         if (response) {
             Log.fine("Successfully added new account to database");
+            Date CurrDate = new Date();
+            String log = "Login:" + loginTextField.getText() + " EMail:" + mailTextField.getText() + " " + CurrDate.toString();
+            Log.fine(log);
         } else {
-            Log.bad("Something went wrong");
+
+            Log.bad("User entered existing mail or login.");
+
+            errorText.setText("EMail or Login is already in use!");
         }
     }
     void register() throws SQLException, InterruptedException {
@@ -86,7 +85,7 @@ public class RegisterController {
     }
 
     @FXML
-    void initialize() {
+    void initialize() throws IOException {
         assert mailTextField != null : "fx:id=\"MailTextField\" was not injected: check your FXML file 'window-register.fxml'.";
         assert passwordTextField != null : "fx:id=\"PasswordTextField\" was not injected: check your FXML file 'window-register.fxml'.";
         assert enterButton != null : "fx:id=\"enterButton\" was not injected: check your FXML file 'window-register.fxml'.";
@@ -97,6 +96,13 @@ public class RegisterController {
             try {
                 register();
             } catch (SQLException | InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        haveOneText.setOnMouseClicked(event -> {
+            try {
+                ControlController.gotoCreateCategory();
+            } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });

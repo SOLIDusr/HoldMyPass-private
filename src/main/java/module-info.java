@@ -6,6 +6,7 @@ module org.dolta.artifact {
     requires com.google.gson;
     requires java.sql;
     requires org.apache.logging.log4j;
+    requires java.prefs;
     opens org.dolta.hmp to javafx.fxml;
     exports org.dolta.hmp;
     exports org.dolta.hmp.utils;

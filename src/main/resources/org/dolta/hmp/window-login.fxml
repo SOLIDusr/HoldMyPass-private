@@ -40,7 +40,7 @@
             <Font name="Comic Sans MS Bold Italic" size="18.0" />
         </font>
     </Button>
-    <Label fx:id="errorText" layoutX="45.0" layoutY="407.0" textFill="#ff5c5c">
+    <Label fx:id="errorText" layoutX="43.0" layoutY="335.0" prefHeight="144.0" prefWidth="297.0" textFill="#ff5c5c" wrapText="true">
         <font>
             <Font name="Arial Black" size="15.0" />
         </font>
@@ -50,7 +50,7 @@
          <Font name="Comic Sans MS" size="14.0" />
       </font>
    </CheckBox>
-   <Label fx:id="singInText" layoutX="29.0" layoutY="354.0" text="Don't have an account? Sing in!" textFill="WHITE">
+   <Label fx:id="singInText" layoutX="22.0" layoutY="515.0" text="Don't have an account? Sing in!" textFill="WHITE">
       <font>
          <Font name="Comic Sans MS Italic" size="16.0" />
       </font>
