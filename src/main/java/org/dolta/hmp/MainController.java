@@ -2,18 +2,18 @@ package org.dolta.hmp;
 
 
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-
+import javafx.scene.control.*;
+import org.dolta.hmp.utils.DBConnection;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static org.dolta.hmp.utils.DBConnection.SetUp;
 
+// Class of controller
 public class MainController {
-
+//  FXML Variables
     @FXML
     private ResourceBundle resources;
 
@@ -46,11 +46,21 @@ public class MainController {
 
     @FXML
     private void setupAppButton() {
+
         String appName = appNameTextField.getText();
         if (appName.contains(" ") || !(appName.length() < 16 && appName.length() > 3)) {
-            return;
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Application name error");
+            alert.setHeaderText("Inappropriate name or length ");
+            alert.setContentText("Application name should not contain spaces and length 3<l<16");
+            alert.showAndWait().ifPresent(rs -> {
+                if (rs == ButtonType.OK) {
+                    return;
+                }
+            });
         }
-        accountSelector.setItems(FXCollections.observableArrayList(appName));
+        SetUp();
+
     }
 
     @FXML
